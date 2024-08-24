@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Shortener</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>URL Shortener</h1>
+        <form id="shortenForm">
+            <input type="text" id="urlInput" placeholder="Enter URL" required>
+            <input type="text" id="titleInput" placeholder="Custom Title" required>
+            <input type="text" id="descriptionInput" placeholder="Custom Description" required>
+            <input type="file" id="imageInput" accept="image/*">
+            <button type="submit">Shorten URL</button>
+        </form>
+        <div id="result" class="hidden">
+            <p>Your shortened URL is:</p>
+            <input type="text" id="shortenedUrl" readonly>
+            <button id="copyButton">Copy</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
